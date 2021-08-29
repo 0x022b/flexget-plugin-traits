@@ -1,0 +1,135 @@
+---
+traits:
+  audio:
+    mp3:
+      value: 5
+    aac:
+      value: 10
+      regexp: aac(?:[1-7]\.[01])?
+    ac3:
+      value: 15
+      regexp: (?:ac-?3|dd[1-5]\.[01])
+    dts:
+      value: 20
+      regexp: dts(?!-hd[ .-]ma)(?:[ .-]?[1-5]\.[01])?
+    eac3:
+      value: 30
+      regexp: dd[p+](?:[1-7]\.[01])?
+    flac:
+      value: 35
+      regexp: flac(?:[ .]?[1-7]\.[01])?
+    truehd:
+      value: 40
+      regexp: truehd[ .-]?[1-7]\.[01]
+    dtshd:
+      value: 45
+      regexp: dts-hd[ .-]ma(?:[ .-]?[1-7]\.[01])?
+
+  codec:
+    divx:
+      value: 5
+    xvid:
+      value: 10
+    vc1:
+      value: 25
+      regexp: vc-?1
+    h264:
+      value: 30
+      regexp: avc|(?:x|h\.?)264
+    vp9:
+      value: 35
+    h265:
+      value: 40
+      regexp: hevc|(?:x|h\.?)265
+
+  color_range:
+    10bit:
+      value: 10
+      regexp: hi10p|10bit(?![ .-]hdr)
+    hdr:
+      value: 30
+      regexp: hdr(?:10)?(?!\+)
+    hdrplus:
+      value: 40
+      regexp: hdr10(?:\+|plus)
+    dolbyvision:
+      value: 45
+      regexp: dv|dolby[ .-]vision
+
+  resolution:
+    360p:
+      value: 5
+    368p:
+      value: 6
+    480p:
+      value: 10
+    576i:
+      value: 12
+    576p:
+      value: 15
+    720p:
+      value: 30
+    1080i:
+      value: 50
+    1080p:
+      value: 65
+    1440p:
+      value: 80
+    2160p:
+      value: 100
+
+  source:
+    cam:
+      value: 5
+      regexp: (?:hd)?cam(?:-rip)?
+    telesync:
+      value: 10
+      regexp: (?:hd)?ts|telesync|pdvd|predvdrip
+    workprint:
+      value: 15
+      regexp: wp|workprint
+    telecine:
+      value: 20
+      regexp: (?:hd)?tc|telecine
+    ppvrip:
+      value: 25
+      regexp: ppv(?:rip)?
+    screener:
+      value: 30
+      regexp: (?:bd|dvd)?scr(?:eener)?
+    ddc:
+      value: 35
+      regexp: ddc
+    r5:
+      value: 40
+      regexp: r5
+    dvdrip:
+      value: 50
+      regexp: dvd(?:rip|mux)
+    dvd:
+      value: 60
+      regexp: dvd-?(?:r|[59]|full)
+    tvrip:
+      value: 70
+      regexp: (?:(?:ds|sat|dth|dvb)rip)|dsr|(?:u?hd|pd|d)?tv(?:rip)?
+    vodrip:
+      value: 75
+      regexp: vodr(?:ip)?
+    hchdrip:
+      value: 80
+      regexp: (?:hc|hd-rip)
+    webcap:
+      value: 85
+      regexp: web(?:[ .-]?cap)
+    hdrip:
+      value: 90
+      regexp: (?:hd|web-dl)rip
+    webrip:
+      value: 95
+      regexp: web(?:[ .-]?rip)
+    webdl:
+      value: 100
+      regexp: web(?:[ .-]?dl)?(?![ .-]?(?:cap|(?:dl)?rip))
+    bluray:
+      value: 110
+      regexp: blu-?ray|bd(?:r(?:ip)?|25|50|5|9|mv)|br?rip

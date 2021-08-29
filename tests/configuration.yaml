@@ -1,0 +1,205 @@
+---
+defaults:
+  audio: DDP5.1
+  codec: x264
+  color_range: 10bit
+  resolution: 1080p
+  source: HDTV
+
+templates:
+  - Star.Trek.Continues.S01E03.Fairest.of.Them.All.{{resolution}}.{{audio}}.{{codec}}-FOO
+  - Star.Trek.Continues.S01E03.Fairest.of.Them.All.{{resolution}}.{{source}}.{{audio}}.{{codec}}-FOO
+  - Star.Trek.Continues.S01E03.Fairest.of.Them.All.{{resolution}}.{{source}}.{{audio}}.{{codec}}.{{color_range}}-FOO
+  - Star.Trek.Continues.S01E03.Fairest.of.Them.All.{{resolution}}.{{source}}.{{codec}}-FOO
+  - Star.Trek.Continues.S01E03.Fairest.of.Them.All.{{resolution}}.{{source}}.{{codec}}.{{color_range}}.{{audio}}-FOO
+
+patterns:
+  audio:
+    mp3:
+      - MP3
+    aac:
+      - AAC
+      - AAC 2.0
+      - AAC 5.1
+      - AAC2.0
+      - AAC5.1
+    ac3:
+      - AC-3
+      - AC3
+      - DD2.0
+      - DD5.1
+    dts:
+      - DTS
+    eac3:
+      - DD+
+      - DD+ 2.0
+      - DD+ 5.1
+      - DD+ 7.1
+      - DD+2.0
+      - DD+5.1
+      - DD+7.1
+      - DDP
+      - DDP 2.0
+      - DDP 5.1
+      - DDP 7.1
+      - DDP2.0
+      - DDP5.1
+      - DDP7.1
+    flac:
+      - FLAC
+      - FLAC 1.0
+      - FLAC 2.0
+      - FLAC 5.1
+    truehd:
+      - TrueHD 5.1
+      - TrueHD 7.1
+    dtshd:
+      - DTS-HD MA
+      - DTS-HD MA 2.0
+      - DTS-HD MA 5.1
+      - DTS-HD MA 7.1
+
+  codec:
+    divx:
+      - DivX
+    xvid:
+      - XviD
+    vc1:
+      - VC-1
+      - VC1
+    h264:
+      - AVC
+      - H.264
+      - H264
+      - x264
+    vp9:
+      - VP9
+    h265:
+      - HEVC
+      - H.265
+      - H265
+      - x265
+
+  color_range:
+    10bit:
+      - 10bit
+      - Hi10P
+    hdr:
+      - 10bit HDR
+      - HDR
+      - HDR10
+    hdrplus:
+      - HDR10+
+      - HDR10Plus
+    dolbyvision:
+      - DV
+      - Dolby Vision
+
+  resolution:
+    360p:
+      - 360p
+    368p:
+      - 368p
+    480p:
+      - 480p
+    576i:
+      - 576i
+    576p:
+      - 576p
+    720p:
+      - 720p
+    1080i:
+      - 1080i
+    1080p:
+      - 1080p
+    1440p:
+      - 1440p
+    2160p:
+      - 2160p
+
+  source:
+    cam:
+      - CAM-Rip
+      - CAM
+      - HDCAM
+    telesync:
+      - TS
+      - HDTS
+      - TELESYNC
+      - PDVD
+      - PreDVDRip
+    workprint:
+      - WP
+      - WORKPRINT
+    telecine:
+      - TC
+      - HDTC
+      - TELECINE
+    ppvrip:
+      - PPV
+      - PPVRip
+    screener:
+      - SCR
+      - SCREENER
+      - DVDSCR
+      - DVDSCREENER
+      - BDSCR
+    ddc:
+      - DDC
+    r5:
+      - R5
+    dvdrip:
+      - DVDRip
+      - DVDMux
+    dvd:
+      - DVDR
+      - DVD-Full
+      - DVD-5
+      - DVD-9
+    tvrip:
+      - DSR
+      - DSRip
+      - SATRip
+      - DTHRip
+      - DVBRip
+      - HDTV
+      - PDTV
+      - DTVRip
+      - TVRip
+      - HDTVRip
+      - UHDTV
+    vodrip:
+      - VODRip
+      - VODR
+    hchdrip:
+      - HC
+      - HD-Rip
+    webcap:
+      - WEB-Cap
+      - WEBCAP
+      - WEB Cap
+    hdrip:
+      - HDRip
+      - WEB-DLRip
+    webrip:
+      - WEBRip
+      - WEB Rip
+      - WEB-Rip
+    webdl:
+      - WEBDL
+      - WEB DL
+      - WEB-DL
+      - WEB
+    bluray:
+      - Blu-Ray
+      - BluRay
+      - BLURAY
+      - BDRip
+      - BRip
+      - BRRip
+      - BDMV
+      - BDR
+      - BD25
+      - BD50
+      - BD5
+      - BD9
